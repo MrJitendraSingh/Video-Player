@@ -1,6 +1,5 @@
-package com.india.videos.ui.theme
+package com.india.videos.core.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme

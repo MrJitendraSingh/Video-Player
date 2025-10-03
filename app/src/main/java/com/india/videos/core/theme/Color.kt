@@ -1,4 +1,4 @@
-package com.india.videos.ui.theme
+package com.india.videos.core.theme
 
 import androidx.compose.ui.graphics.Color
 
