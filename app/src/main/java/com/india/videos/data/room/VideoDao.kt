@@ -44,5 +44,12 @@ interface VideoDao {
 
     @Query("SELECT * FROM video_bookmarks WHERE videoId = :videoId")
     suspend fun getBookmarks(videoId: Long): List<BookmarkEntity>
+
+    @Query("DELETE FROM video_bookmarks WHERE bookmarkId = :bookmarkId")
+    suspend fun removeBookmark(bookmarkId: Long)
+
+    @Query("DELETE FROM favorites WHERE videoId = :videoId")
+    suspend fun removeFromFavorites(videoId: Long)
+
 }
 

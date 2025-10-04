@@ -15,5 +15,5 @@ import com.india.videos.data.room.entity.VideoPlaybackStateEntity
     FavoriteEntity::class,
     BookmarkEntity::class], version = 1)
 abstract class LocalDB : RoomDatabase() {
-
+    abstract fun videoDao(): VideoDao
 }
